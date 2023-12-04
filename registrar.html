@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <title>Registrar</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+
+<body>
+  <div class="container mt-5">
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="id" class="form-label">ID donante</label>
+        <input type="number" class="form-control" id="id">
+        <div id="idHelp" class="form-text"></div>
+      </div>
+      <div class="col-md-6">
+        <label for="nombre" class="form-label">Nombre completo</label>
+        <input type="text" class="form-control" id="nombre">
+        <div id="nombreHelp" class="form-text"></div>
+      </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input type="text" class="form-control" id="email">
+        <div id="emailHelp" class="form-text"></div>
+      </div>
+      <div class="col-6">
+        <label for="direccion" class="form-label">direccion</label>
+        <input type="text" class="form-control" id="direccion">
+        <div id="direccionHelp" class="form-text"></div>
+      </div>
+      <div class="col-6">
+        <label for="telefono" class="form-label">Telefono</label>
+        <input type="number" class="form-control" id="telefono">
+        <div id="telefonoHelp" class="form-text"></div>
+      </div>
+      <div class="col-md-6 ">
+        <label for="tipo" class="form-label">Tipo documento</label>
+        <select class="form-control" id="tipo">
+          <option value="">seleccionar tipo de documento</option>
+          <option value="cedula">Cedula</option>
+          <option value="Documento Extranjero">Documento Extranjero</option>
+          <option value="Pasaporte">Pasaporte</option>
+          <option value="Permiso temporal de permanencia">Permiso temporal de permanencia</option>
+          <option value="Registro civil">Registro civil</option>
+          <option value="Tarjeta de identidad">Tarjeta de identidad</option>
+        </select>
+        <div id="tipoHelp" class="form-text"></div>
+      </div>
+      <div class="col-md-6">
+        <label for="documento" class="form-label">Documento</label>
+        <input type="text" class="form-control" id="documento" placeholder="0000000000">
+        <div id="documentoHelp" class="form-text"></div>
+      </div>
+      <div class="col-6">
+        <label for="fecha" class="form-label">Fecha de registro</label>
+        <input type="text" class="form-control" id="fecha">
+        <div id="fechaHelp" class="form-text"></div>
+      </div>
+      <div class="col-md-6">
+        <label for="entidad" class="form-label">Entidad asociada</label>
+        <input type="text" class="form-control" id="entidad">
+        <div id="entidadHelp" class="form-text"></div>
+      </div>
+
+      <div class="col-12">
+        <button type="button" class="btn btn-primary" id="btnRegistrar">Registrar</button>
+        <a href="./index.html"><button type="button" class="btn btn-danger">Cancelar</button></a>
+      </div>
+
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+  <script src="js/funciones.js"></script>
+</body>
+
+</html>
